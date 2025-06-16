@@ -2,13 +2,13 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { Sky } from 'three/addons/objects/Sky.js';
 import { Timer } from 'three/addons/misc/Timer.js';
-import GUI from 'lil-gui';
+// import GUI from 'lil-gui';
 
 /**
  * Base
  */
 // Debug
-const gui = new GUI();
+// const gui = new GUI();
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
@@ -132,8 +132,8 @@ const floor = new THREE.Mesh(
 floor.rotation.x = -Math.PI * 0.5;
 scene.add(floor);
 
-gui.add(floor.material, 'displacementScale').min(0).max(1).step(0.001).name('displacementScale');
-gui.add(floor.material, 'displacementBias').min(-1).max(1).step(0.001).name('displacementBias');
+// gui.add(floor.material, 'displacementScale').min(0).max(1).step(0.001).name('displacementScale');
+// gui.add(floor.material, 'displacementBias').min(-1).max(1).step(0.001).name('displacementBias');
 
 // House Group
 const house = new THREE.Group();
